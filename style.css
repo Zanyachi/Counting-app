@@ -1,0 +1,84 @@
+* {
+    box-sizing: 0;
+    /* margin: 0; */
+    padding: 0;
+}
+
+body {
+    background-image: url('/images/cool\ beach.jpg.jpg');
+    background-color:aqua;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: rgb(255, 255, 255, 50%);
+    margin: 5px;
+    max-width: 350px;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px; 
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.count { 
+    font-size: 100px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.add-btn, .sub-btn {
+    padding: 10px 30px 10px 30px;
+}
+
+.add-btn{
+    background-color: green;
+}
+
+.sub-btn {
+    background-color: purple;
+}
+
+.refresh-btn {
+    background-color: rgb(164, 163, 163);
+    padding: 10px;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    margin: 0 8px;
+    color: white;
+}
+
+.add-btn:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+    transform: translate(-10%, -10%);
+}
+
+.sub-btn:hover {
+    background-color: violet;
+    cursor: pointer;
+    transform: translate(10%, -10%);
+}
+
+.refresh-btn:hover {
+    background-color: white;
+    cursor: pointer;
+    color: rgb(164, 163, 163);
+    transform: translate(0, -10%);
+}
